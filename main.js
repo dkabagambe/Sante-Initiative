@@ -97,3 +97,47 @@ document
 
 window.addEventListener("scroll", animateOnScroll);
 window.addEventListener("load", animateOnScroll);
+// ----------------------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".stat-number");
+  const speed = 200;
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+
+          // Get the original value
+          const originalText = counter.textContent.trim();
+          const match = originalText.match(/([\d,]+)/); // extract the number
+          const suffix = originalText.replace(match[0], ""); // extract symbol like + or %
+
+          const target = parseInt(match[0].replace(/,/g, "")); // convert to number
+
+          const updateCount = () => {
+            const current = +counter.innerText
+              .replace(/,/g, "")
+              .replace(/[^0-9]/g, "");
+            const increment = Math.ceil(target / speed);
+
+            if (current < target) {
+              counter.innerText = `${(
+                current + increment
+              ).toLocaleString()}${suffix}`;
+              setTimeout(updateCount, 20);
+            } else {
+              counter.innerText = `${target.toLocaleString()}${suffix}`;
+            }
+          };
+
+          updateCount();
+          observer.unobserve(counter);
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  counters.forEach((counter) => observer.observe(counter));
+});
