@@ -745,3 +745,72 @@ section {
     transition: right 0.4s ease;
   }
 }
+/* WhatsApp Container Positioning */
+#qlwapp {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  z-index: 9999;
+  transition: transform 0.3s ease;
+  height: 40px;
+}
+
+/* WhatsApp Button Styling */
+.qlwapp-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--accent-green);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+/* WhatsApp Icon */
+.qlwapp-toggle i.fab.fa-whatsapp {
+  font-size: 24px;
+  color: #fff;
+}
+
+/* Close (×) icon */
+.qlwapp-close {
+  display: none; /* You can enable it if needed */
+  margin-left: auto;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* WhatsApp Text */
+.qlwapp-text {
+  display: inline;
+  white-space: nowrap;
+}
+
+/* Hover Effect */
+.qlwapp-toggle:hover {
+  background-color: var(--accent-green);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Responsive Hide on Very Small Screens (Optional) */
+@media (max-width: 400px) {
+  .qlwapp-text {
+    display: none;
+  }
+
+  .qlwapp-toggle {
+    padding: 12px;
+    border-radius: 50%;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+  }
+}
