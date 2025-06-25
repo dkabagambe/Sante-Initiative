@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santé Initiative - Vision Care for Uganda</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@399&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon//favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon//favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/favicon//site.webmanifest" />
+  </head>
+  <body>
+    <!-- Header with Improved Navigation -->
+    <header class="header">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="img/logo.png" alt="Santé Initiative"
+        /></a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#get-involved">Get Involved</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#donate" class="btn btn-secondary">Donate</a>
+      </nav>
+
+      <!-- Mobile Navigation Toggle -->
+      <div class="mobile-toggle" id="mobileToggle">
+        <i class="fas fa-bars" id="menuIcon"></i>
+      </div>
+    </header>
+
+    <!-- Off-Canvas Menu for Mobile -->
+    <div class="off-canvas-menu" id="offCanvasMenu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#get-involved">Get Involved</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#donate" class="btn btn-secondary">Donate Now</a>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Restoring Vision, Transforming Lives</h1>
+          <p>
+            Santé Initiative is dedicated to providing affordable, quality
+            vision care to underserved communities across Uganda.
+          </p>
+          <div class="hero-btns">
+            <a href="#get-involved" class="btn btn-primary">Get Involved</a>
+            <a
+              href="#about"
+              class="btn btn-outline"
+              style="
+                background: rgba(255, 255, 255, 0.1);
+                color: white;
+                border-color: white;
+              "
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>About Us</h2>
+            <div class="mission-vision">
+              <h3>Our Vision</h3>
+              <p>
+                A Uganda where every individual, regardless of location or
+                income, has access to affordable, quality vision care—empowering
+                them to live with dignity, independence, and productivity.
+              </p>
+            </div>
+            <div class="mission-vision">
+              <h3>Our Mission</h3>
+              <p>
+                To restore and enhance vision among underserved and vulnerable
+                communities in Uganda by providing affordable, high-quality
+                reading glasses, leveraging community-based outreach, innovative
+                diagnostics, and inclusive financing models.
+              </p>
+            </div>
+          </div>
+          <div class="about-objectives">
+            <h2>Strategic Objectives</h2>
+            <div class="objectives-grid">
+              <div class="objective-card">
+                <h3><span>1</span> Increase Access</h3>
+                <p>
+                  Provide affordable reading glasses to at least 100,000 people
+                  in rural and peri-urban Uganda by 2030.
+                </p>
+              </div>
+              <div class="objective-card">
+                <h3><span>2</span> Raise Awareness</h3>
+                <p>
+                  Conduct targeted vision health education campaigns to
+                  demystify presbyopia and reduce stigma.
+                </p>
+              </div>
+              <div class="objective-card">
+                <h3><span>3</span> Empower Local Champions</h3>
+                <p>
+                  Train and deploy community health workers to lead outreach in
+                  hard-to-reach areas.
+                </p>
+              </div>
+              <div class="objective-card">
+                <h3><span>4</span> Ensure Affordability</h3>
+                <p>
+                  Implement hire purchase and mobile money platforms to reduce
+                  financial barriers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+      <div class="container">
+        <h2>Our Programs</h2>
+        <div class="program-cards">
+          <div class="program-card">
+            <div
+              class="program-img"
+              style="
+                background: url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80')
+                  center/cover;
+              "
+            ></div>
+            <div class="program-content">
+              <h3>Community Outreach Clinics</h3>
+              <p>
+                Bringing vision care directly to remote villages through mobile
+                clinics and health camps.
+              </p>
+              <a href="#" class="btn btn-outline" style="margin-top: 1rem"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="program-card">
+            <div
+              class="program-img"
+              style="
+                background: url('https://images.unsplash.com/photo-1581578021233-92ad4e2b0ed2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80')
+                  center/cover;
+              "
+            ></div>
+            <div class="program-content">
+              <h3>Eye Care Services</h3>
+              <p>
+                Comprehensive eye examinations and affordable reading glasses
+                for presbyopia.
+              </p>
+              <a href="#" class="btn btn-outline" style="margin-top: 1rem"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="program-card">
+            <div
+              class="program-img"
+              style="
+                background: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80')
+                  center/cover;
+              "
+            ></div>
+            <div class="program-content">
+              <h3>Health Education</h3>
+              <p>
+                Workshops and campaigns to raise awareness about vision health
+                and eye care.
+              </p>
+              <a href="#" class="btn btn-outline" style="margin-top: 1rem"
+                >Learn More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">15,000+</div>
+            <div class="stat-text">People Served</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">120+</div>
+            <div class="stat-text">Communities Reached</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">85%</div>
+            <div class="stat-text">Women Beneficiaries</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">2030</div>
+            <div class="stat-text">Impact Goal</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <h2>Our Impact Gallery</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1581578021527-9a47b7daf0f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+              alt="Community Outreach"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+              alt="Vision Screening"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1629909613657-27f26a6148e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+              alt="Health Education"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+              alt="Glasses Distribution"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section class="get-involved" id="get-involved">
+      <div class="container">
+        <h2>Get Involved</h2>
+        <p>Join us in making vision care accessible to everyone in Uganda</p>
+        <div class="involve-cards">
+          <div class="involve-card">
+            <div class="involve-icon">
+              <i class="fas fa-hands-helping"></i>
+            </div>
+            <h3>Volunteer</h3>
+            <p>
+              Join our team on the ground and make a direct impact in
+              communities across Uganda.
+            </p>
+            <a href="#" class="btn btn-outline" style="margin-top: 1.5rem"
+              >Join Us</a
+            >
+          </div>
+          <div class="involve-card">
+            <div class="involve-icon">
+              <i class="fas fa-donate"></i>
+            </div>
+            <h3>Donate</h3>
+            <p>
+              Support our mission with a financial contribution to help us reach
+              more communities.
+            </p>
+            <a
+              href="#"
+              class="btn btn-secondary"
+              style="margin-top: 1.5rem"
+              id="donate"
+              >Donate Now</a
+            >
+          </div>
+          <div class="involve-card">
+            <div class="involve-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Partnership</h3>
+            <p>
+              Partner with us to expand our reach and create sustainable impact
+              together.
+            </p>
+            <a href="#" class="btn btn-outline" style="margin-top: 1.5rem"
+              >Partner With Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Santé Initiative</h3>
+            <p>
+              Restoring and enhancing vision among underserved communities in
+              Uganda through affordable, high-quality care and innovative
+              solutions.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#programs">Programs</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#get-involved">Get Involved</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span> Kampala, Uganda</span>
+              </li>
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                <span>+256 758 000280</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>info@santeinitiative.org</span>
+              </li>
+              <li>
+                <i class="fab fa-whatsapp"></i>
+                <span>+256 702 612079</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2025 Santé Initiative. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
