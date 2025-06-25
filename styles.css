@@ -7,7 +7,7 @@
   --dark-text: #333;
   --light-text: #777;
   --white: #ffffff;
-  --off-white: #f8f9fa;
+  --off-white: #f9f9f9;
   --box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
   --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -292,8 +292,7 @@ section {
       rgba(0, 87, 160, 0.9) 0%,
       rgba(46, 139, 87, 0.85) 100%
     ),
-    url("https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1353&q=80")
-      center/cover no-repeat;
+    url("/img/glasses.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   color: var(--white);
@@ -733,5 +732,6 @@ section {
   .off-canvas-menu {
     width: 280px;
     padding: 5rem 1.5rem 2rem;
+    transition: right 0.4s ease;
   }
 }
