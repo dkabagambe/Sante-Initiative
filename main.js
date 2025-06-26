@@ -141,3 +141,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   counters.forEach((counter) => observer.observe(counter));
 });
+// this is the javascript for the year in the copyright when the year changes its also changes
+document.getElementById("year").textContent = new Date().getFullYear();

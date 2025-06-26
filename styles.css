@@ -127,7 +127,7 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -164,7 +164,7 @@ section {
 .desktop-nav ul li a {
   text-decoration: none;
   color: var(--dark-text);
-  font-family: "Poppins", sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   transition: var(--transition);
@@ -217,11 +217,15 @@ section {
 
 .off-canvas-menu {
   position: fixed;
-  top: 0;
+  top: 20;
   right: -100%;
-  width: 320px;
-  height: 100vh;
-  background: var(--white);
+  width: 100%;
+  height: auto;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.55)
+    ),
+    url("/img/glas3.jpeg") center/cover repeat;
   box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   transition: var(--transition);
@@ -244,7 +248,7 @@ section {
 .off-canvas-menu ul li a {
   text-decoration: none;
   color: var(--dark-text);
-  font-family: "Poppins", sans-serif;
+  font-family: "Mulish", sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
   display: block;
@@ -254,7 +258,6 @@ section {
 }
 
 .off-canvas-menu ul li a:hover {
-  background: var(--light-blue);
   color: var(--primary-blue);
   padding-left: 1.5rem;
 }
@@ -674,9 +677,9 @@ section {
 .copyright {
   text-align: center;
   padding-top: 2rem;
-  border-top: 1px solid #444;
-  color: #bbb;
-  font-size: 0.9rem;
+  border-top: 1px solid #7a7777;
+  color: var(--off-white);
+  font-size: 1.2rem;
 }
 
 /* Responsive Design */
