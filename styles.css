@@ -33,7 +33,6 @@ h3,
 h4,
 h5 {
   font-family: "EB Garamond", serif;
-
   font-weight: 600;
   line-height: 1.3;
   margin-bottom: 1rem;
@@ -812,5 +811,125 @@ section {
     justify-content: center;
     width: 50px;
     height: 50px;
+  }
+}
+
+/* Contact Section */
+.contact-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.contact-column {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.contact-column h2 {
+  margin-bottom: 2rem;
+  color: var(--primary-blue);
+  font-size: 1.7rem;
+}
+.contact-column .icon {
+  font-size: 1.3rem;
+}
+.contact-column p,
+.contact-column label {
+  color: #070707;
+  font-size: 1.3rem;
+}
+form label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  height: auto;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid var(--light-text);
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #2e8b57;
+  box-shadow: 0 0 5px rgba(46, 139, 87, 0.3);
+  background-color: #fff;
+  outline: none;
+}
+
+form button {
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: var(--accent-green);
+}
+
+.icon {
+  color: #2e8b57;
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  border: 0;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-column {
+    flex: 1;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  .contact-map iframe {
+    height: auto;
+  }
+  .contact-info {
+    padding: 15px;
+    border-radius: 6px;
+  }
+
+  .contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .contact-info .icon {
+    flex-shrink: 0;
+    margin-right: 8px;
   }
 }
