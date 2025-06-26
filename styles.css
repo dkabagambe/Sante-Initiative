@@ -159,6 +159,7 @@ section {
 
 .desktop-nav ul li {
   margin-left: 1.8rem;
+  align-items: start;
 }
 
 .desktop-nav ul li a {
