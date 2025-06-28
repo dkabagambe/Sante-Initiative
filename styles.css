@@ -39,14 +39,16 @@ h5 {
 }
 
 h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
+  font-size: 2.7rem;
+  font-weight: 600;
+  font-family: "Playfair Display", serif !important;
 }
 
 h2 {
   font-size: 2.5rem;
   position: relative;
   margin-bottom: 3rem;
+  font-family: "EB Garamond", serif;
 }
 
 h2:after {
@@ -61,7 +63,7 @@ h2:after {
 }
 
 section {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
 }
 
 .container {
@@ -69,26 +71,29 @@ section {
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
 
 .btn {
   display: inline-block;
-  padding: 14px 32px;
+  padding: 14px 20px;
   border-radius: 50px;
   text-decoration: none;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-family: "EB Garamond", serif;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 0.9rem;
+  font-size: 0.99rem;
   transition: var(--transition);
   cursor: pointer;
   border: none;
   outline: none;
+  color: var(--white);
 }
-
 .btn-primary {
   background: var(--primary-blue);
-  color: var(--white);
   box-shadow: 0 4px 15px rgba(0, 87, 160, 0.3);
 }
 
@@ -100,7 +105,6 @@ section {
 
 .btn-secondary {
   background: var(--accent-green);
-  color: var(--white);
   box-shadow: 0 4px 15px rgba(46, 139, 87, 0.3);
 }
 
@@ -111,13 +115,12 @@ section {
 }
 
 .btn-outline {
-  background: transparent;
-  border: 2px solid var(--primary-blue);
-  color: var(--primary-blue);
+  background: var(--accent-green);
+  color: var(--off-white);
 }
 
 .btn-outline:hover {
-  background: var(--primary-blue);
+  background: var(--accent-green);
   color: var(--white);
 }
 
@@ -339,7 +342,7 @@ section {
 .about {
   background: linear-gradient(
       to bottom,
-      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.89),
       rgba(255, 255, 255, 0.9)
     ),
     url("img/glasshp.jpg");
@@ -357,6 +360,7 @@ section {
 
 .about-text h2 {
   margin-bottom: 3rem;
+  font-family: Garamond, serif;
 }
 
 .mission-vision {
@@ -370,6 +374,15 @@ section {
 .mission-vision h3 {
   color: var(--primary-blue);
   margin-bottom: 1rem;
+  font-family: "Cormorant Garamond", serif;
+}
+.mission-vision h2 {
+  font-size: 2rem;
+  font-family: "Cormorant Garamond", serif;
+}
+.about-objectives h2 {
+  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .objectives-grid {
@@ -397,10 +410,11 @@ section {
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .objective-card h3 span {
-  background: var(--accent-green);
+  background: var(--primary-blue);
   color: white;
   width: 30px;
   height: 30px;
@@ -409,7 +423,8 @@ section {
   align-items: center;
   justify-content: center;
   margin-right: 10px;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
+  font-family: "Cormorant Garamond", serif;
 }
 
 /* Programs Section */
@@ -419,6 +434,8 @@ section {
 
 .programs h2 {
   text-align: center;
+  font-family: Garamond, serif;
+  font-size: 2rem;
 }
 
 .programs h2:after {
@@ -458,6 +475,7 @@ section {
 .program-content h3 {
   color: var(--primary-blue);
   margin-bottom: 1rem;
+  font-family: "Cormorant Garamond", serif;
 }
 
 /* Stats Section */
@@ -498,6 +516,8 @@ section {
 
 .gallery h2 {
   text-align: center;
+  font-family: Garamond, serif;
+  font-size: 2rem;
 }
 
 .gallery h2:after {
@@ -539,6 +559,8 @@ section {
 
 .get-involved h2 {
   text-align: center;
+  font-family: Garamond, serif;
+  font-size: 2rem;
 }
 
 .get-involved h2:after {
@@ -584,6 +606,7 @@ section {
 .involve-card h3 {
   color: var(--primary-blue);
   margin-bottom: 1rem;
+  font-family: "Cormorant Garamond", serif;
 }
 
 /* Footer */
@@ -605,6 +628,7 @@ section {
   margin-bottom: 1.5rem;
   position: relative;
   padding-bottom: 10px;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .footer-column h3:after {
@@ -615,6 +639,7 @@ section {
   width: 50px;
   height: 3px;
   background: var(--accent-green);
+  font-family: "Cormorant Garamond", serif;
 }
 
 .footer-links {
@@ -844,6 +869,7 @@ section {
   margin-bottom: 2rem;
   color: var(--primary-blue);
   font-size: 1.7rem;
+  font-family: Garamond, serif;
 }
 .contact-column .icon {
   font-size: 1.3rem;
