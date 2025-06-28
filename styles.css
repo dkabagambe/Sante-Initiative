@@ -17,6 +17,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 
 body {
   font-family: "Cormorant Garamond", serif;
@@ -139,10 +143,12 @@ section {
   background: var(--white);
   box-shadow: var(--box-shadow);
   transition: var(--transition);
+  height: auto;
 }
 
 .logo {
   height: 70px; /* or your preferred height */
+  flex: 4;
 }
 
 .logo img {
@@ -154,6 +160,7 @@ section {
 .desktop-nav {
   display: flex;
   align-items: center;
+  flex: 5;
 }
 
 .desktop-nav ul {
@@ -170,8 +177,8 @@ section {
   text-decoration: none;
   color: var(--dark-text);
   font-family: "Urbanist", sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
   transition: var(--transition);
   position: relative;
   padding: 5px 0;
@@ -222,20 +229,26 @@ section {
 
 .off-canvas-menu {
   position: fixed;
-  top: 20;
+  top: 10;
   right: -100%;
   width: 100%;
+  margin-top: 6rem;
   height: auto;
   background: linear-gradient(
-      rgba(255, 255, 255, 0.85),
-      rgba(255, 255, 255, 0.55)
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.85)
     ),
-    url("/img/glas3.jpeg") center/cover repeat;
-  box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+    url("/img/eyeglass.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  box-shadow: -5px 0 30px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   transition: var(--transition);
-  padding: 6rem 2rem 2rem;
+  padding: 4rem 2rem 2rem;
   overflow-y: auto;
+  height: 100%;
 }
 
 .off-canvas-menu.active {
@@ -259,7 +272,7 @@ section {
   display: block;
   padding: 0.8rem 1rem;
   transition: var(--transition);
-  border-radius: 8px;
+  color: #222;
 }
 
 .off-canvas-menu ul li a:hover {
@@ -791,9 +804,21 @@ section {
   .hero-btns {
     flex-direction: column;
   }
-
+  /* Improved Header & Navigation */
   .header {
-    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    height: auto;
   }
 }
 
