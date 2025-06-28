@@ -147,7 +147,7 @@ section {
 }
 
 .logo {
-  height: 70px; /* or your preferred height */
+  height: 60px; /* or your preferred height */
   flex: 4;
 }
 
@@ -544,9 +544,9 @@ section {
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -555,7 +555,7 @@ section {
 }
 
 .stat-number {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   margin-bottom: 0.5rem;
@@ -769,6 +769,7 @@ section {
 
   .about-content {
     grid-template-columns: 1fr;
+    place-items: center;
   }
 
   .desktop-nav {
@@ -795,6 +796,9 @@ section {
 
   .hero {
     min-height: 700px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .hero h1 {
@@ -832,7 +836,7 @@ section {
   }
 
   .stat-number {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .off-canvas-menu {
