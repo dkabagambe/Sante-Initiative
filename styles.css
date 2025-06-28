@@ -449,7 +449,7 @@ section {
   padding: 2rem;
   border-radius: 15px;
   transition: var(--transition);
-  border-top: 3px solid var(--accent-green);
+  border-right: 3px solid var(--accent-green);
 }
 
 .objective-card:hover {
@@ -478,7 +478,97 @@ section {
   font-size: 1.1rem;
   font-family: "Cormorant Garamond", serif;
 }
+@media (max-width: 768px) {
+  .about {
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.7)
+      ),
+      url("img/glasshp.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
+  .about-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    align-items: center;
+    place-items: center;
+  }
+
+  .about-text h2 {
+    margin-bottom: 3rem;
+    font-family: Garamond, serif;
+    font-size: 2rem;
+  }
+
+  .mission-vision {
+    background: var(--light-blue);
+    padding: 2.5rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--primary-blue);
+  }
+
+  .mission-vision h3 {
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+    font-family: "Cormorant Garamond", serif;
+  }
+  .mission-vision h2 {
+    font-size: 2rem;
+    font-family: "Cormorant Garamond", serif;
+  }
+  .about-objectives h2 {
+    font-weight: 600;
+    font-family: "Cormorant Garamond", serif;
+  }
+
+  .objectives-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .objective-card {
+    background: var(--light-green);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: var(--transition);
+    border-right: 3px solid var(--accent-green);
+  }
+
+  .objective-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--box-shadow);
+  }
+
+  .objective-card h3 {
+    color: var(--accent-green);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    font-family: "Cormorant Garamond", serif;
+  }
+
+  .objective-card h3 span {
+    background: var(--primary-blue);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 1.1rem;
+    font-family: "Cormorant Garamond", serif;
+  }
+}
 /* Programs Section */
 .programs {
   background: var(--off-white);
