@@ -67,10 +67,6 @@ h2:after {
   border-radius: 2px;
 }
 
-section {
-  padding: 4rem 2rem;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -403,6 +399,8 @@ section {
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
+  margin: auto;
+  padding-bottom: 2rem;
 }
 
 .about-content {
@@ -522,6 +520,7 @@ section {
 /* Programs Section */
 .programs {
   background: var(--off-white);
+  margin: 2rem auto;
 }
 
 .programs h2 {
@@ -617,6 +616,10 @@ section {
 /* Gallery */
 .gallery {
   background: var(--white);
+  margin: 3rem auto;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 2rem;
 }
 
 .gallery h2 {
@@ -657,6 +660,7 @@ section {
 }
 
 /* Get Involved */
+
 .get-involved {
   background: var(--off-white);
   text-align: center;
@@ -719,10 +723,14 @@ section {
     flex-direction: column;
     align-items: center; /* center items horizontally */
   }
+  .get-involved {
+    padding: 10px;
+  }
   .involve-cards {
     display: flex;
     flex-direction: column;
     align-items: center; /* center items horizontally */
+    padding: 15px;
   }
 }
 
@@ -994,6 +1002,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
+  margin: 3rem auto;
 }
 
 .contact-column {
@@ -1081,6 +1090,7 @@ form button:hover {
   .contact-container {
     flex-direction: column;
     gap: 10px;
+    padding: 10px;
   }
   .contact-column {
     display: flex;
