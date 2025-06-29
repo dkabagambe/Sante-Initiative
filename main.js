@@ -143,3 +143,25 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // this is the javascript for the year in the copyright when the year changes its also changes
 document.getElementById("year").textContent = new Date().getFullYear();
+// these are the stats loader javascript
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".stat-number");
+  const speed = 1000; // Lower is faster
+
+  counters.forEach((counter) => {
+    const updateCount = () => {
+      const target = +counter.getAttribute("data-target");
+      const count = +counter.innerText;
+      const increment = target / speed;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(updateCount, 20);
+      } else {
+        counter.innerText = target.toLocaleString(); // format with comma
+      }
+    };
+
+    updateCount();
+  });
+});
