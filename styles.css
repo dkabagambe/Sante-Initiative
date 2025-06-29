@@ -497,7 +497,7 @@ section {
 
   .about-content {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     width: 100%;
     align-items: center;
     place-items: center;
@@ -804,16 +804,6 @@ section {
 
 /* Responsive Design */
 @media (max-width: 992px) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  .about-content {
-    grid-template-columns: 1fr;
-    place-items: center;
-    width: 100%;
-  }
-
   .desktop-nav {
     display: none;
   }
