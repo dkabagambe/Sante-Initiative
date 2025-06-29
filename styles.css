@@ -410,7 +410,6 @@ section {
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: center;
-  width: 100%;
 }
 
 .about-text h2 {
@@ -491,21 +490,21 @@ section {
         rgba(255, 255, 255, 0.8),
         rgba(255, 255, 255, 0.7)
       ),
-      url("img/glasshp.jpg");
+      url(img/glasshp.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     align-items: center;
     width: 100%;
-    height: 100%;
-    padding-left: 10px;
-    padding-right: auto;
+    height: auto;
+    padding: 2rem 1.5rem;
   }
 
   .about-content {
-    display: grid;
-    grid-template-columns: 1fr !important;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center items horizontally */
+    gap: 2rem; /* spacing between items */
   }
 
   .about-text h2 {
@@ -572,6 +571,13 @@ section {
   margin-bottom: 1rem;
   font-family: "Cormorant Garamond", serif;
 }
+@media (max-width: 768px) {
+  .program-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center items horizontally */
+  }
+}
 
 /* Stats Section */
 .stats {
@@ -603,7 +609,13 @@ section {
   font-family: "Poppins", sans-serif;
   margin-bottom: 0.5rem;
 }
-
+@media (max-width: 768px) {
+  .stats-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center items horizontally */
+  }
+}
 /* Gallery */
 .gallery {
   background: var(--white);
@@ -702,6 +714,18 @@ section {
   color: var(--primary-blue);
   margin-bottom: 1rem;
   font-family: "Cormorant Garamond", serif;
+}
+@media (max-width: 768px) {
+  .gallery-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center items horizontally */
+  }
+  .involve-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center items horizontally */
+  }
 }
 
 /* Footer */
@@ -1048,9 +1072,9 @@ form button:hover {
     gap: 10px;
   }
   .contact-column {
-    flex: 1;
-    margin-bottom: 20px;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center items horizontally */
   }
   .contact-map iframe {
     height: auto;
