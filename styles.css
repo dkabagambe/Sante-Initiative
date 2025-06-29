@@ -401,6 +401,8 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
 }
 
 .about-content {
@@ -408,6 +410,7 @@ section {
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   align-items: center;
+  width: 100%;
 }
 
 .about-text h2 {
@@ -489,6 +492,7 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    align-items: center;
   }
 
   .about-content {
@@ -503,6 +507,15 @@ section {
     margin-bottom: 3rem;
     font-family: Garamond, serif;
     font-size: 2rem;
+  }
+  .mission-vision {
+    display: grid;
+    place-items: center;
+    padding: 1.5rem !important;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    padding-left: 0;
+    width: 100%;
   }
 }
 /* Programs Section */
@@ -798,6 +811,7 @@ section {
   .about-content {
     grid-template-columns: 1fr;
     place-items: center;
+    width: 100%;
   }
 
   .desktop-nav {
