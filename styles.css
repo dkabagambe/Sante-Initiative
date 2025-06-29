@@ -74,7 +74,7 @@ section {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  /* padding: 0 1.5rem; */
 }
 .hero-btns {
   display: flex;
@@ -513,12 +513,10 @@ section {
     font-size: 2rem;
   }
   .mission-vision {
-    display: grid;
-    place-items: center;
-    padding: 1.5rem !important;
+    display: flex;
+    flex-direction: column;
+
     margin-bottom: 2rem;
-    padding-left: 0;
-    width: 100%;
   }
 }
 /* Programs Section */
