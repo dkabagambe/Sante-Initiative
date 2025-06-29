@@ -417,6 +417,9 @@ section {
   margin-bottom: 3rem;
   font-family: Garamond, serif;
 }
+.about-text h3 {
+  font-size: 1.9rem;
+}
 
 .mission-vision {
   background: var(--light-blue);
@@ -500,7 +503,7 @@ section {
     grid-template-columns: 1fr !important;
     width: 100%;
     align-items: center;
-    place-items: center;
+    height: 100%;
   }
 
   .about-text h2 {
