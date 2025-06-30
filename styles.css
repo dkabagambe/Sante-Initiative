@@ -1155,7 +1155,7 @@ form button:hover {
   background: var(--light-blue);
   padding: 1.5rem;
   border-radius: 10px;
-  border-left: 3px solid var(--primary-blue);
+  border-left: 4px solid var(--primary-blue);
 }
 .step h3 {
   color: var(--accent-green);
