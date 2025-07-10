@@ -256,7 +256,7 @@ h2 {
 }
 
 .off-canvas-menu ul li {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .off-canvas-menu ul li a {
@@ -266,7 +266,7 @@ h2 {
   font-weight: 500;
   font-size: 1.2rem;
   display: block;
-  padding: 0.8rem 1rem;
+  padding: 0.2rem 1rem;
   transition: var(--transition);
   color: #222;
 }
@@ -338,13 +338,13 @@ h2 {
 }
 
 .hero-content p {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   max-width: 600px;
   margin-bottom: 2.5rem;
   opacity: 1;
   color: var(--light-green) !important;
   font-family: "Cormorant Garamond", serif;
-  line-height: 1.6; /* improves readability for paragraph blocks */
+  line-height: 1.5; /* improves readability for paragraph blocks */
   letter-spacing: 0.3px; /* gentle tracking for better eye flow */
 }
 
