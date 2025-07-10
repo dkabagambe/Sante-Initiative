@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sante Initiative - Vision Care for Uganda</title>
+    <title>Contact| Sante Initiative</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -97,22 +97,79 @@
     </div>
     <div class="menu-overlay" id="menuOverlay"></div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="container">
-        <div class="hero-content">
-          <h1>Sante Initiative</h1>
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container contact-container">
+        <!-- Contact Form -->
+        <div class="contact-column contact-form">
+          <h2>Contact Us</h2>
+          <p>Reach Us by filling this form below</p>
+          <form action="send.php" method="POST">
+            <label for="name">Name*</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+
+            <label for="email">Email*</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="youremail@gmail.com"
+              required
+            />
+
+            <label for="subject">Subject*</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+              required
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Your message here..."
+              required
+            ></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-column contact-info">
+          <h2>Location</h2>
           <p>
-            To increase access to reading glasses for people with presbyopia in
-            Uganda through
-            <strong>awareness campaigns</strong>,
-            <strong>accessible diagnostic tools</strong>, and
-            <strong>quality-assured distribution</strong>.
+            <span class="icon">📍</span>158652 Kampala GPO,Kakungulu
+            Road,Ambassador close,Kalinabiri,Uganda
           </p>
-          <!-- <div class="hero-btns">
-            <a href="#get-involved" class="btn btn-primary">Get Involved</a>
-            <a href="#about" class="btn btn-outline">Learn More</a>
-          </div> -->
+          <p><span class="icon">📞</span> +256 758 000280</p>
+          <p><span class="icon">✉️</span> info@santeinitiative.org</p>
+          <p><span class="icon">💬</span> +256 702 612079</p>
+          <p><span class="icon">📱</span> +256 775 081034</p>
+        </div>
+
+        <!-- Map Embed -->
+        <div class="contact-column contact-map">
+          <h2>Map</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3714.423487193278!2d32.57880507389356!3d0.31377199212433343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1skakungulu%20road%20road%20ambassador%20close!5e1!3m2!1sen!2sug!4v1750943789060!5m2!1sen!2sug"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </section>
