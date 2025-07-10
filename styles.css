@@ -268,7 +268,7 @@ h2 {
   display: block;
   padding: 0.2rem 1rem;
   transition: var(--transition);
-  color: #222;
+  color: #111;
 }
 
 .off-canvas-menu ul li a:hover {
