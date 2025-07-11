@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@399&display=swap");
 :root {
-  --primary-blue: #003b6f;
-  --accent-green: #2e8b57;
+  --primary-blue: #003580;
+  --accent-green: #00ab51;
   --light-blue: #e6f0fa;
   --light-green: #e8f5eb;
   --dark-text: #333;
@@ -172,7 +172,7 @@ h2 {
 .desktop-nav ul li a {
   text-decoration: none;
   color: var(--white);
-  font-family: "Urbanist", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1.1rem;
   transition: var(--transition);
@@ -262,7 +262,7 @@ h2 {
 .off-canvas-menu ul li a {
   text-decoration: none;
   color: var(--dark-text);
-  font-family: "Mulish", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
   display: block;
