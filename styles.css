@@ -181,7 +181,7 @@ h2 {
 }
 
 .desktop-nav ul li a:hover {
-  color: var(--dark-text);
+  color: #000;
 }
 
 .desktop-nav ul li a:after {
