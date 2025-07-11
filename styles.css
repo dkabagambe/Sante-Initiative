@@ -333,7 +333,7 @@ h2 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
   line-height: 1.3; /* slightly more breathing room */
-  color: var(--light-blue) !important;
+  color: var(--primary-blue) !important;
   letter-spacing: 0.5px; /* improves clarity for uppercase or bold fonts */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* improves contrast if on image/bg */
 }
@@ -343,7 +343,7 @@ h2 {
   max-width: 600px;
   margin-bottom: 2.5rem;
   opacity: 1;
-  color: var(--light-green) !important;
+  color: var(--off-white) !important;
   font-family: "Cormorant Garamond", serif;
   line-height: 1.5; /* improves readability for paragraph blocks */
   letter-spacing: 0.3px; /* gentle tracking for better eye flow */
@@ -373,7 +373,7 @@ h2 {
     padding: 0 2rem;
   }
   .hero h1 {
-    font-size: 2rem !important;
+    font-size: 2.2rem !important;
     margin-bottom: 1.5rem;
     line-height: 1 !important;
     color: var(--white);
