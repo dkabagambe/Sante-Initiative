@@ -181,7 +181,7 @@ h2 {
 }
 
 .desktop-nav ul li a:hover {
-  color: #000;
+  color: var(--dark-text);
 }
 
 .desktop-nav ul li a:after {
@@ -964,7 +964,7 @@ h2 {
 }
 
 .footer-links a:hover {
-  color: var(--white);
+  color: var(--dark-text);
 }
 
 .contact-info {
