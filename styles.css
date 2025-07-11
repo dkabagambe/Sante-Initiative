@@ -179,7 +179,9 @@ h2 {
   position: relative;
   padding: 5px 0;
 }
-
+.desktop-nav ul li a.active {
+  color: #aaa;
+}
 .desktop-nav ul li a:hover {
   color: var(--dark-text);
 }
@@ -275,7 +277,10 @@ h2 {
   color: var(--primary-blue);
   padding-left: 1.5rem;
 }
-
+.off-canvas-menu ul li a.active {
+  color: var(--accent-green);
+  font-weight: 600;
+}
 .off-canvas-menu .btn {
   width: 100%;
   text-align: center;

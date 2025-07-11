@@ -165,3 +165,28 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCount();
   });
 });
+// Highlight current nav link
+// Add click event to nav links
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".desktop-nav ul li a");
+  const currentUrl = window.location.pathname;
+
+  // Highlight the current page link on page load
+  navLinks.forEach((link) => {
+    const linkPath = link.getAttribute("href");
+
+    if (linkPath === "/" && currentUrl === "/") {
+      link.classList.add("active");
+    } else if (linkPath !== "/" && currentUrl.includes(linkPath)) {
+      link.classList.add("active");
+    }
+  });
+
+  // Add click highlight immediately
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      navLinks.forEach((l) => l.classList.remove("active"));
+      this.classList.add("active");
+    });
+  });
+});
