@@ -136,7 +136,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  background: var(--white);
+  background: var(--primary-blue);
   box-shadow: var(--box-shadow);
   transition: var(--transition);
   height: auto;
@@ -171,17 +171,17 @@ h2 {
 
 .desktop-nav ul li a {
   text-decoration: none;
-  color: var(--dark-text);
+  color: var(--white);
   font-family: "Urbanist", sans-serif;
-  font-weight: 600;
-  font-size: 1.1rem;
+  font-weight: 500;
+  font-size: 1.2rem;
   transition: var(--transition);
   position: relative;
   padding: 5px 0;
 }
 
 .desktop-nav ul li a:hover {
-  color: var(--primary-blue);
+  color: var(--dark-text);
 }
 
 .desktop-nav ul li a:after {
@@ -917,10 +917,10 @@ h2 {
 
 /* Footer */
 .footer {
-  background: var(--dark-text);
   color: var(--white);
   padding: 4rem 0 2rem;
   width: 100%;
+  background-color: var(--primary-blue);
 }
 
 .footer-content {
@@ -977,7 +977,7 @@ h2 {
 }
 
 .contact-info i {
-  color: var(--accent-green);
+  color: rgb(43, 255, 0);
   margin-right: 10px;
   font-size: 1.2rem;
   width: 20px;
@@ -996,7 +996,7 @@ h2 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #444;
+  background: var(--accent-green);
   color: var(--white);
   transition: var(--transition);
   text-decoration: none;
@@ -1013,7 +1013,7 @@ h2 {
   border-top: 1px solid #7a7777;
   color: var(--off-white);
   font-size: 1.2rem;
-  color: rgb(92, 255, 60);
+  color: rgb(43, 255, 0);
   font-weight: 600;
 }
 
@@ -1030,7 +1030,6 @@ h2 {
 
 @media (max-width: 768px) {
   .footer {
-    background: var(--dark-text);
     color: var(--white);
     padding: 3rem 2rem;
   }
@@ -1080,7 +1079,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    background: var(--white);
+    background: var(--primary-blue);
     box-shadow: var(--box-shadow);
     transition: var(--transition);
     height: auto;
